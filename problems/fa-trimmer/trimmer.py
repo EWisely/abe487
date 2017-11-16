@@ -43,6 +43,8 @@ def main():
             if len(seq) >= min_len:
                 num_taken += 1
                 out_fh.write('\n'.join(['>' + record.id, seq, '']))
-    print('Wrote {} sequence{} to "{}"'.format(num_taken, '' if num_taken ==1 else 's',outfile))
+    print('Wrote {} sequence{} to "{}"'.format(num_taken, 
+                                               '' if num_taken == 1 else 's',
+                                               outfile))
 if __name__ == '__main__':
     main()
